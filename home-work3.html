@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,66 +12,58 @@
 
 <body>
     <main>
-        <h1>Home work #3</h1>
-        <form>
-            <fieldset>
-                <legend>Укажите ваши данные</legend>
-                <p>
-                    <label for="name">Ваше имя:</label>
-                    <input id="name" type="text" placeholder="Введите свое имя" required>
-                </p>
-                <p>
-                    <label for="surname">Ваша фамилия:</label>
-                    <input id="surname" type="text" placeholder="Введите свою фамилию" required>
-                </p>
-                <p>
-                    <label for="mail">Электронная почта:</label>
-                    <input id="mail" type="email" placeholder="Введите свою почту" required>
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>Данные про ваш курс</legend>
-                <p>
-                    <label for="curs">Выберите ваш курс:</label>
-                    <select name="curs">
-                        <option value="1" selected>Выберите из списка</option>
-                        <option value="2">Front-End Basic</option>
-                        <option value="3">Front-End Pro</option>
-                        <option value="4">PHP</option>
-                    </select>
-                </p>
-                <span>Выполняете ли вы домашние задания:</span>
-                <p>
-                    <label>
-                        <input type="radio" name="ready" id="one">
-                        <span>Да, выполняю</span>
-                    </label>
-                    <br>
-                </p>
-                <p>
-                    <label>
-                        <input type="radio" name="ready" id="two">
-                        <span>Нет, не выполняю</span>
-                    </label>
-                </p>
-                <br>
-                <span>Дополнительная информация:</span>
-                <p>
-                    <input type="checkbox" name="info" id="one">
-                    <span>Буду продолжать обучение</span>
-                </p>
-                <p>
-                    <input type="checkbox" name="info" id="two">
-                    <span>Дополнительно занимаюсь английским</span>
-                </p>
-
-
-            </fieldset>
-            </p>
-            </fieldset> -->
-        </form>
+        <section class="container">
+            <h1>Home work #3</h1>
+            <form>
+                <fieldset>
+                    <legend>Укажите ваши данные</legend>
+                    <p>
+                        <label for="name">Ваше имя:</label>
+                        <input id="name" type="text" name="name" placeholder="Введите свое имя" required>
+                    </p>
+                    <p>
+                        <label for="surname">Ваша фамилия:</label>
+                        <input id="surname" type="text" name="surname" placeholder="Введите свою фамилию" required>
+                    </p>
+                    <p>
+                        <label for="email">Электронная почта:</label>
+                        <input name="email" id="email" type="email" placeholder="Введите свою почту" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Данные про ваш курс</legend>
+                    <p>
+                        <label for="curs">Выберите ваш курс:</label>
+                        <select name="curs" id="curs">
+                            <option selected disabled>Выберите из списка</option>
+                            <option value="Basic">Front-End Basic</option>
+                            <option value="Pro">Front-End Pro</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>Выполняете ли вы домашние задания:</span>
+                        <br>
+                        <input type="radio" name="homework" id="one" value="yes">
+                        <label for="one">Да, выполняю</label>
+                        <br>
+                        <input type="radio" name="homework" id="two" value="no">
+                        <label for="two">Нет, не выполняю</label>
+                        <br>
+                    </p>
+                    <p>
+                        <span>Дополнительная информация:</span>
+                        <br>
+                        <input type="checkbox" name="continue" id="continue" value="yes">
+                        <label for="continue">Буду продолжать обучение</label>
+                        <br>
+                        <input type="checkbox" name="learn_english" id="english" value="yes">
+                        <label for="english">Дополнительно занимаюсь английским</label>
+                    </p>
+                </fieldset>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
     </main>
-
 </body>
 
 </html>
